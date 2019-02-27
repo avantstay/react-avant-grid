@@ -33,34 +33,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var classnames_1 = __importDefault(require("classnames"));
 var React = __importStar(require("react"));
 function Column(props) {
-    var _a = props.sm, sm = _a === void 0 ? 1 : _a, _b = props.md, md = _b === void 0 ? 0 : _b, _c = props.lg, lg = _c === void 0 ? 0 : _c, _d = props.xl, xl = _d === void 0 ? 0 : _d, _e = props.doubleSpaced, doubleSpaced = _e === void 0 ? false : _e, _f = props.tripleSpaced, tripleSpaced = _f === void 0 ? false : _f, children = props.children, className = props.className, innerRef = props.innerRef, extraProps = __rest(props, ["sm", "md", "lg", "xl", "doubleSpaced", "tripleSpaced", "children", "className", "innerRef"]);
-    var doubleSpaceClass = '';
-    var tripleSpaceClass = '';
-    switch (doubleSpaced) {
-        case false:
-            break;
-        case true:
-            doubleSpaceClass = 'double-reactPureGridSpaced';
-            break;
-        default:
-            doubleSpaceClass = doubleSpaced + "-double-reactPureGridSpaced";
-            break;
-    }
-    switch (tripleSpaced) {
-        case false:
-            break;
-        case true:
-            tripleSpaceClass = 'triple-reactPureGridSpaced';
-            break;
-        default:
-            tripleSpaceClass = tripleSpaced + "-triple-reactPureGridSpaced";
-            break;
-    }
+    var _a = props.sm, sm = _a === void 0 ? 1 : _a, _b = props.md, md = _b === void 0 ? 0 : _b, _c = props.lg, lg = _c === void 0 ? 0 : _c, _d = props.xl, xl = _d === void 0 ? 0 : _d, children = props.children, className = props.className, innerRef = props.innerRef, extraProps = __rest(props, ["sm", "md", "lg", "xl", "children", "className", "innerRef"]);
     var smUnits = sm && (sm * 5) % 1 ? 24 : 5;
     var mdUnits = md && (md * 5) % 1 ? 24 : 5;
     var lgUnits = lg && (lg * 5) % 1 ? 24 : 5;
     var xlUnits = xl && (xl * 5) % 1 ? 24 : 5;
-    var classes = classnames_1.default(sm === 1 ? 'pure-u-1' : "pure-u-" + Math.round(sm * smUnits) + "-" + smUnits, sm === 1 ? 'pure-u-sm-1' : "pure-u-sm-" + Math.round(sm * smUnits) + "-" + smUnits, md === 1 ? 'pure-u-md-1' : "pure-u-md-" + Math.round(md * mdUnits) + "-" + mdUnits, lg === 1 ? 'pure-u-lg-1' : "pure-u-lg-" + Math.round(lg * lgUnits) + "-" + lgUnits, xl === 1 ? 'pure-u-xl-1' : "pure-u-xl-" + Math.round(xl * xlUnits) + "-" + xlUnits, doubleSpaceClass, tripleSpaceClass, className);
+    var classes = classnames_1.default(sm === 1 ? 'pure-u-1' : "pure-u-" + Math.round(sm * smUnits) + "-" + smUnits, sm === 1 ? 'pure-u-sm-1' : "pure-u-sm-" + Math.round(sm * smUnits) + "-" + smUnits, md === 1 ? 'pure-u-md-1' : "pure-u-md-" + Math.round(md * mdUnits) + "-" + mdUnits, lg === 1 ? 'pure-u-lg-1' : "pure-u-lg-" + Math.round(lg * lgUnits) + "-" + lgUnits, xl === 1 ? 'pure-u-xl-1' : "pure-u-xl-" + Math.round(xl * xlUnits) + "-" + xlUnits, className);
     return (React.createElement("div", __assign({ className: classes }, extraProps, { ref: function (it) { return innerRef && innerRef(it); } }), children));
 }
 exports.Column = Column;
