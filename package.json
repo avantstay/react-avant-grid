@@ -1,6 +1,6 @@
 {
   "name": "react-pure-grid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,12 +9,16 @@
     "build": "rm -rf dist && tsc && cd src && copyfiles **/*.css ../dist"
   },
   "dependencies": {
-    "@types/classnames": "^2.2.7",
+    "classnames": "^2.2.6"
+  },
+  "peerDependencies": {
+    "react": "^16.6.3"
+  },
+  "devDependencies": {
     "@types/react": "^16.8.5",
-    "classnames": "^2.2.6",
-    "copyfiles": "^2.1.0",
-    "purecss": "^1.0.0",
+    "@types/classnames": "^2.2.7",
     "react": "^16.8.3",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.3333",
+    "copyfiles": "^2.1.0"
   }
 }

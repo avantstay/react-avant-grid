@@ -370,11 +370,6 @@ pseudomap@^1.0.2:
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
-purecss@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/purecss/-/purecss-1.0.0.tgz#3dbcd9e2a7592448a69acb705cce16311bf4b785"
-  integrity sha512-gfC78WCOWNnfkzulx9aoWwcl+0JflhwKeJ+k9s/ZyIawfYNA4bqBmt0DtfgtQK9iuYMtGfbdE8R2AQMjSWR2VQ==
-
 react-is@^16.8.1:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
