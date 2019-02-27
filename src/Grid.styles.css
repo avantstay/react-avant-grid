@@ -1,0 +1,65 @@
+.pure-g,
+.pure-g [class*=pure-u] {
+  font-family: unset
+}
+
+.reactPureGrid {
+  min-width: 100%;
+  width: auto;
+}
+
+.reactPureGrid.reactPureGridSpaced {
+  margin-right: -10px
+}
+
+.reactPureGrid.reactPureGridSpaced:last-child {
+  margin-bottom: -10px
+}
+
+.reactPureGrid.reactPureGridSpaced > [class*="pure-u"] {
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.reactPureGrid.reactPureGridSpaced > [class*="pure-u"].double-reactPureGridSpaced {
+  border-right: 20px solid transparent
+}
+
+.reactPureGrid.reactPureGridSpaced > [class*="pure-u"].triple-reactPureGridSpaced {
+  border-right: 30px solid transparent
+}
+
+.reactPureGrid.stretch > [class*="pure-u"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 35.5em) {
+  .reactPureGrid.sm-reactPureGridSpaced { margin-right: 0 !important }
+  .reactPureGrid.sm-reactPureGridSpaced > [class*="pure-u"] { border-right: 0 !important }
+}
+
+@media screen and (min-width: 35.5em) {
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].sm-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].md-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+}
+
+@media screen and (min-width: 48em) {
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].md-double-reactPureGridSpaced { border-right: 20px solid transparent }
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].sm-double-reactPureGridSpaced { border-right: 20px solid transparent }
+}
+
+@media screen and (min-width: 56em) {
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].lg-double-reactPureGridSpaced { border-right: 20px solid transparent }
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].lg-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+}
+
+@media screen and (min-width: 64em) {
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].xl-double-reactPureGridSpaced { border-right: 20px solid transparent }
+  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].xl-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+}
