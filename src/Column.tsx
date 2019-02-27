@@ -8,8 +8,6 @@ export interface ColumnProps {
   lg: number,
   xl: number,
   innerRef: (ref: HTMLDivElement | null) => void,
-  doubleSpaced: boolean | 'sm' | 'md' | 'lg' | 'xl',
-  tripleSpaced: boolean | 'sm' | 'md' | 'lg' | 'xl',
   children: React.ReactNode
 }
 
@@ -19,42 +17,11 @@ export function Column(props: ColumnProps) {
     md = 0,
     lg = 0,
     xl = 0,
-    doubleSpaced = false,
-    tripleSpaced = false,
     children,
     className,
     innerRef,
     ...extraProps
   } = props
-
-  let doubleSpaceClass = ''
-  let tripleSpaceClass = ''
-
-  switch (doubleSpaced) {
-    case false:
-      break
-
-    case true:
-      doubleSpaceClass = 'double-reactPureGridSpaced'
-      break
-
-    default:
-      doubleSpaceClass = `${doubleSpaced}-double-reactPureGridSpaced`
-      break
-  }
-
-  switch (tripleSpaced) {
-    case false:
-      break
-
-    case true:
-      tripleSpaceClass = 'triple-reactPureGridSpaced'
-      break
-
-    default:
-      tripleSpaceClass = `${tripleSpaced}-triple-reactPureGridSpaced`
-      break
-  }
 
   const smUnits = sm && (sm * 5) % 1 ? 24 : 5
   const mdUnits = md && (md * 5) % 1 ? 24 : 5
@@ -67,8 +34,6 @@ export function Column(props: ColumnProps) {
     md === 1 ? 'pure-u-md-1' : `pure-u-md-${Math.round(md * mdUnits)}-${mdUnits}`,
     lg === 1 ? 'pure-u-lg-1' : `pure-u-lg-${Math.round(lg * lgUnits)}-${lgUnits}`,
     xl === 1 ? 'pure-u-xl-1' : `pure-u-xl-${Math.round(xl * xlUnits)}-${xlUnits}`,
-    doubleSpaceClass,
-    tripleSpaceClass,
     className
   )
 

@@ -4,24 +4,16 @@
 }
 
 .reactPureGrid.reactPureGridSpaced {
-  margin-right: -10px
+  margin-right: -20px
 }
 
 .reactPureGrid.reactPureGridSpaced:last-child {
-  margin-bottom: -10px
+  margin-bottom: -20px
 }
 
 .reactPureGrid.reactPureGridSpaced > [class*="pure-u"] {
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-
-.reactPureGrid.reactPureGridSpaced > [class*="pure-u"].double-reactPureGridSpaced {
-  border-right: 20px solid transparent
-}
-
-.reactPureGrid.reactPureGridSpaced > [class*="pure-u"].triple-reactPureGridSpaced {
-  border-right: 30px solid transparent
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 
 .reactPureGrid.stretch > [class*="pure-u"] {
@@ -39,22 +31,17 @@
   .reactPureGrid.sm-reactPureGridSpaced > [class*="pure-u"] { border-right: 0 !important }
 }
 
-@media screen and (min-width: 35.5em) {
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].sm-triple-reactPureGridSpaced { border-right: 30px solid transparent }
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].md-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+@media screen and (max-width: 48em) {
+  .reactPureGrid.md-reactPureGridSpaced { margin-right: 0 !important }
+  .reactPureGrid.md-reactPureGridSpaced > [class*="pure-u"] { border-right: 0 !important }
 }
 
-@media screen and (min-width: 48em) {
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].md-double-reactPureGridSpaced { border-right: 20px solid transparent }
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].sm-double-reactPureGridSpaced { border-right: 20px solid transparent }
+@media screen and (max-width: 56em) {
+  .reactPureGrid.lg-reactPureGridSpaced { margin-right: 0 !important }
+  .reactPureGrid.lg-reactPureGridSpaced > [class*="pure-u"] { border-right: 0 !important }
 }
 
-@media screen and (min-width: 56em) {
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].lg-double-reactPureGridSpaced { border-right: 20px solid transparent }
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].lg-triple-reactPureGridSpaced { border-right: 30px solid transparent }
-}
-
-@media screen and (min-width: 64em) {
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].xl-double-reactPureGridSpaced { border-right: 20px solid transparent }
-  .reactPureGrid.reactPureGridSpaced > [class*="pure-u"].xl-triple-reactPureGridSpaced { border-right: 30px solid transparent }
+@media screen and (max-width: 64em) {
+  .reactPureGrid.xl-reactPureGridSpaced { margin-right: 0 !important }
+  .reactPureGrid.xl-reactPureGridSpaced > [class*="pure-u"] { border-right: 0 !important }
 }
