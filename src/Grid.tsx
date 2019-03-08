@@ -1,8 +1,8 @@
 import * as React from 'react'
 import cx from 'classnames'
 import './Grid.styles.css'
-import './grids-min.css'
-import './grids-responsive-min.css'
+import './vendor/pure-grids-min.css'
+import './vendor/pure-grids-responsive-min.css'
 
 export interface GridProps {
   className: string,
