@@ -33,8 +33,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var classnames_1 = __importDefault(require("classnames"));
 require("./Grid.styles.css");
-require("./grids-min.css");
-require("./grids-responsive-min.css");
+require("./vendor/pure-grids-min.css");
+require("./vendor/pure-grids-responsive-min.css");
 function Grid(_a) {
     var className = _a.className, _b = _a.spaced, spaced = _b === void 0 ? false : _b, _c = _a.stretch, stretch = _c === void 0 ? false : _c, children = _a.children, props = __rest(_a, ["className", "spaced", "stretch", "children"]);
     var spacedClass = '';
