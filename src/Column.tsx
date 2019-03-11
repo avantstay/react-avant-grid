@@ -2,12 +2,12 @@ import cx from 'classnames'
 import * as React from 'react'
 
 export interface ColumnProps {
-  className: string,
-  sm: number,
-  md: number,
-  lg: number,
-  xl: number,
-  innerRef: (ref: HTMLDivElement | null) => void,
+  className?: string,
+  sm?: number,
+  md?: number,
+  lg?: number,
+  xl?: number,
+  innerRef?: (ref: HTMLDivElement | null) => void,
   children: React.ReactNode
 }
 
@@ -29,11 +29,11 @@ export function Column(props: ColumnProps) {
   const xlUnits = xl && (xl * 5) % 1 ? 24 : 5
 
   const classes = cx(
-    sm === 1 ? 'pure-u-1' : `pure-u-${Math.round(sm * smUnits)}-${smUnits}`,
-    sm === 1 ? 'pure-u-sm-1' : `pure-u-sm-${Math.round(sm * smUnits)}-${smUnits}`,
-    md === 1 ? 'pure-u-md-1' : `pure-u-md-${Math.round(md * mdUnits)}-${mdUnits}`,
-    lg === 1 ? 'pure-u-lg-1' : `pure-u-lg-${Math.round(lg * lgUnits)}-${lgUnits}`,
-    xl === 1 ? 'pure-u-xl-1' : `pure-u-xl-${Math.round(xl * xlUnits)}-${xlUnits}`,
+    sm === 1 || !sm ? 'pure-u-1' : `pure-u-${Math.round(sm * smUnits)}-${smUnits}`,
+    sm === 1 || !sm ? 'pure-u-sm-1' : `pure-u-sm-${Math.round(sm * smUnits)}-${smUnits}`,
+    md === 1 || !md ? 'pure-u-md-1' : `pure-u-md-${Math.round(md * mdUnits)}-${mdUnits}`,
+    lg === 1 || !lg ? 'pure-u-lg-1' : `pure-u-lg-${Math.round(lg * lgUnits)}-${lgUnits}`,
+    xl === 1 || !xl ? 'pure-u-xl-1' : `pure-u-xl-${Math.round(xl * xlUnits)}-${xlUnits}`,
     className
   )
 

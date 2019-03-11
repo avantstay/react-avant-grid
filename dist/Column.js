@@ -38,7 +38,7 @@ function Column(props) {
     var mdUnits = md && (md * 5) % 1 ? 24 : 5;
     var lgUnits = lg && (lg * 5) % 1 ? 24 : 5;
     var xlUnits = xl && (xl * 5) % 1 ? 24 : 5;
-    var classes = classnames_1.default(sm === 1 ? 'pure-u-1' : "pure-u-" + Math.round(sm * smUnits) + "-" + smUnits, sm === 1 ? 'pure-u-sm-1' : "pure-u-sm-" + Math.round(sm * smUnits) + "-" + smUnits, md === 1 ? 'pure-u-md-1' : "pure-u-md-" + Math.round(md * mdUnits) + "-" + mdUnits, lg === 1 ? 'pure-u-lg-1' : "pure-u-lg-" + Math.round(lg * lgUnits) + "-" + lgUnits, xl === 1 ? 'pure-u-xl-1' : "pure-u-xl-" + Math.round(xl * xlUnits) + "-" + xlUnits, className);
+    var classes = classnames_1.default(sm === 1 || !sm ? 'pure-u-1' : "pure-u-" + Math.round(sm * smUnits) + "-" + smUnits, sm === 1 || !sm ? 'pure-u-sm-1' : "pure-u-sm-" + Math.round(sm * smUnits) + "-" + smUnits, md === 1 || !md ? 'pure-u-md-1' : "pure-u-md-" + Math.round(md * mdUnits) + "-" + mdUnits, lg === 1 || !lg ? 'pure-u-lg-1' : "pure-u-lg-" + Math.round(lg * lgUnits) + "-" + lgUnits, xl === 1 || !xl ? 'pure-u-xl-1' : "pure-u-xl-" + Math.round(xl * xlUnits) + "-" + xlUnits, className);
     return (React.createElement("div", __assign({ className: classes }, extraProps, { ref: function (it) { return innerRef && innerRef(it); } }), children));
 }
 exports.Column = Column;

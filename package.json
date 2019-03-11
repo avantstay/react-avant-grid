@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "private": false,
   "scripts": {
-    "build": "rm -rf dist && tsc && cd src && copyfiles **/*.css ../dist"
+    "build": "rm -rf dist && tsc && cd src && copyfiles vendor/*.css ../dist && copyfiles './Grid.styles.css' ../dist"
   },
   "dependencies": {
     "classnames": "^2.2.6"

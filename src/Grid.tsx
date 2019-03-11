@@ -5,9 +5,9 @@ import './vendor/pure-grids-min.css'
 import './vendor/pure-grids-responsive-min.css'
 
 export interface GridProps {
-  className: string,
-  spaced   : boolean | 'sm' | 'md' | 'lg' | 'xl',
-  stretch  : boolean,
+  className?: string,
+  spaced   ?: boolean | 'sm' | 'md' | 'lg' | 'xl',
+  stretch  ?: boolean,
   children: React.ReactNode
 }
 
